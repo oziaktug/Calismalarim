@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <title>Volaresoft</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <a href="#">Volaresoft</a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#">Anasayfa</a></li>
+            <li><a href="#">Hizmetler</a></li>
+            <li><a href="#">Portföy</a></li>
+            <li><a href="#">İletişim</a></li>
+        </ul>
+        <div class="social-media">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="text-content">
+            <div class="yazi"><h1>BENZERSİZ DİJİTAL & <span class="stroke">YARATICI</span> AJANS</h1></div>
+            <p class="paragraf">En son teknolojileri ve trendleri kullanarak profesyonel bir tasarımla mordern web çözümleri tasarlıyor ve geliştiriyoruz.</p>
+        </div>
+        <div class="ortala">
+            <a href="#" class="fa fa-cog" id="cark-iki"></a>
+        </div>
+    </div>
+
+     <div class="deneme-container">
+        <div class="deneme">
+            <div class="deneme2"></div>
+        </div>
+        
+        <div class="play-button-container">
+            <div class="play-button">
+                <div class="play-icon"></div>
+            </div>
+        </div>
+        
+        <div class="ajans">
+            <img src="image/dijital-ajans.png" alt="Dijital Ajans">
+        </div>
+    </div>
+    <div class="cursor-trail"></div>
+    
+    <div class="marquee-wrapper">
+        <div class="marquee">
+            <p>Web Geliştirme * Dijital Pazarlama * Ürün Tasarımı * Mobil Çözümler * Kullanıcı Arayüzü Tasarımı </p>
+            <p>Web Geliştirme * Dijital Pazarlama * Ürün Tasarımı * Mobil Çözümler * Kullanıcı Arayüzü Tasarımı </p> 
+        </div>
+    </div>
+    <div class="accordion-container">
+        <div class="accordion-item">
+            <button class="accordion-header">Hizmetlerimiz</button>
+            <div class="accordion-content">
+                <p>Hizmetlerimiz Kullanıcı dostu arayüzler, hızlı tasarım ve güvenlik odaklı çözümler sunarak işletmelerin dijital varlıklarını güçlendiriyoruz. İşbirliğiyle hedefleri yerine getiriyoruz.</p>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <button class="accordion-header">Web Sitesi & Mobil Uygulama</button>
+            <div class="accordion-content">
+                <p>En son trendleri kullanarak profesyonel bir yazılımla modern web çözümleri tasarlıyor ve geliştiriyoruz.</p>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <button class="accordion-header">Reklam & Sosyal Medya Yönetimi</button>
+            <div class="accordion-content">
+                <p>Hesaplarınızı yönetmeden önce pazar araştırması yapıyor ve gerekli olanları listeliyoruz.</p>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section address">
+                <h2>Adres</h2>
+                <p>İstanbul / Esenyurt Mehmet Akif Ersoy Mahallesi 2116.Sokak</p>
+            </div>
+            <div class="footer-section contact">
+                <h2>İletişim</h2>
+                <p>Email: info@volaresoft.com</p>
+                <p>Telefon: +123 456 7890</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>All rights reserved 2023 © Volaresoft</p>
+        </div>
+    </footer>
+
+<script>
+        document.addEventListener('mousemove', (e) => {
+            const cursorTrail = document.querySelector('.cursor-trail');
+            cursorTrail.style.left = `${e.pageX}px`;
+            cursorTrail.style.top = `${e.pageY}px`;
+        });
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>

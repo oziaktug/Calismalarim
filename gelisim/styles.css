@@ -1,0 +1,338 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #1e1e1e;
+    background-image: linear-gradient(to right, #2a2a2a 1px, transparent 1px), 
+                      linear-gradient(to bottom, #2a2a2a 1px, transparent 1px);
+    background-size: 60px 60px;  
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1e1e1e;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    padding: 20px 300px;
+    color: #fff;
+}
+
+.logo a {
+    color: #f0f0f0;
+    text-decoration: none;
+    font-size: 36px;
+}
+
+.nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 15px;
+    position: relative;
+}
+
+.nav-links a {
+    color: #f0f0f0;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 24px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.nav-links a::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0;
+    height: 2px;
+    background-color: #2ecc71;
+    transition: width 0.3s ease;
+}
+
+.nav-links a:hover::before {
+    width: 100%;
+}
+
+.nav-links a:hover {
+    color: #2ecc71;
+    transform: translateY(-5px);
+}
+
+.social-media {
+    display: flex;
+}
+
+.social-media a {
+    color: #f0f0f0;
+    margin-left: 20px;
+    text-decoration: none;
+    font-size: 30px;
+}
+
+.social-media a:hover {
+    color: #2ecc71;
+    transform: translateY(-5px);
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    height: 50vh;
+    text-align: left;
+    color: #f0f0f0;
+    padding-left: 50px;
+}
+
+.container .text-content {
+    margin-right: 20px;
+}
+
+.container .yazi {
+    font-size: 36px;
+    margin: 0;
+}
+
+.container .paragraf {
+    font-size: 18px;
+}
+
+.stroke {
+    color: #2ecc71;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: underline;
+}
+
+.ortala {
+    width: 100px;
+    height: 100px;
+    padding-left: 100px;
+    padding-bottom: 50px;
+}
+
+#cark-iki {
+    color: #f2f2f2;
+    font-size: 120px;
+    text-decoration: none;
+    font-weight: normal;
+    transition: transform 0.6s ease;
+}
+
+#cark-iki:hover {
+    animation: fa-spin 2s infinite linear;
+}
+
+@keyframes fa-spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.deneme-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.deneme {
+    position: relative;
+    width: 480px;
+    height: 480px;
+    transform: rotate(-45deg);
+    right: +15%;
+}
+.deneme .deneme2{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 25px solid #2ecc71;
+}
+
+.ajans {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+.ajans img {
+    width: 1100px;
+    height: 430px;
+}
+.play-button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.play-button {
+    width: 100px;
+    height: 100px;
+    background-color: #2ecc71;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.play-button:hover {
+    background-color: #2ecc71;
+    transform: scale(1.1);
+}
+
+.play-icon {
+    width: 0;
+    height: 0;
+    border-left: 25px solid white;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    position: relative;
+    left: 5px;
+}
+.cursor-trail {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: #f2f2f2;
+    border-radius: 50%;
+    pointer-events: none; 
+    transform: translate(-50%, -50%);
+    transition: width 0.2s ease, height 0.2s ease, opacity 0.2s ease;
+}
+.cursor-trail.hovered {
+    width: 80px; 
+    height: 80px; 
+    opacity: 0.3; 
+}
+
+.marquee-wrapper {
+    width: 99.8%;
+    height: 200px;
+    overflow: hidden; 
+    white-space: nowrap;
+    box-sizing: border-box;
+    border: 2px solid #333;
+    margin-top: 300px ;
+    transform: rotate(-2deg);
+    margin-bottom: 80px;
+}
+
+.marquee {
+    display: flex;
+    white-space: nowrap;
+    animation: marquee 40s linear infinite;
+}
+
+.marquee p {
+    display: inline-block;
+    padding: 0px;
+    font-size: 65px;
+    color: #f0f0f0;
+    font-weight: bold;
+}
+
+
+@keyframes marquee {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+.accordion-container {
+    max-width: 800px; 
+    margin: auto;
+    margin-bottom: 200px;
+    
+}
+
+.accordion-item {
+    margin-bottom: 15px; 
+}
+
+.accordion-header {
+    background-color: #2a2a2a;
+    color: #e2e2e2;
+    border: none;
+    padding: 20px; 
+    text-align: left;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 4px;
+    outline: none;
+    font-size: 18px;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+}
+
+.accordion-header:hover {
+    background-color: #2ecc71;
+}
+
+.accordion-content {
+    padding: 20px;
+    background-color: #e2e2e2;
+    border-radius: 4px;
+    display: none;
+}
+
+.accordion-content p {
+    margin: 0;
+}
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.footer-section {
+    width: 45%;
+}
+
+.footer-section h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #2ecc71;
+    padding-bottom: 5px;
+}
+
+.footer-section p {
+    margin: 5px 0;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 10px 0;
+    border-top: 1px solid #444;
+    margin-top: 20px;
+}
+
+.footer-bottom p {
+    margin: 0;
+    font-size: 14px;
+    color: #aaa;
+}
